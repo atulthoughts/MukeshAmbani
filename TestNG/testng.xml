@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" thread-count="3" parallel="methods" > <!-- Parallel to be searched -->
+	<listeners>
+	<listener class-name="TestNg1.listener"/>
+	</listeners>	
+	<parameter name="URL" value="Sagar"/>
+  <test  name="Test" group-by-instances="true"> <!--Module Name: Any name can be given-->
+  <parameter name="URLT" value="SagarTest"/>  
+    <classes>
+    	<class name="TestNg1.TestNg1"/>
+    	<class name="TestNg1.TestNg2">    	
+    	</class> <!--Package.class name-->      
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

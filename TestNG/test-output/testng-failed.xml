@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <parameter name="URL" value="Sagar"/>
+  <listeners>
+    <listener class-name="TestNg1.listener"/>
+  </listeners>
+  <test thread-count="3" name="Test(failed)" parallel="methods">
+    <parameter name="URLT" value="SagarTest"/>
+    <classes>
+      <class name="TestNg1.TestNg1">
+        <methods>
+          <include name="AfirstTest"/>
+          <include name="executeSessionTwo"/>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="BeforeSuite"/>
+          <include name="BsecondTest"/>
+        </methods>
+      </class> <!-- TestNg1.TestNg1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
